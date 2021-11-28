@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"BAB1.latihan1"},{"l":"BAB1.latihan2"},{"l":"BAB1.latihan3"},{"l":"gajelas"},{"l":"Latihan"}];updateSearchResults();
