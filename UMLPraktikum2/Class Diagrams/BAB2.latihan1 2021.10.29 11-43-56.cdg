@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="BAB2.latihan1">
+  <ClassDiagramComponents>
+    <Class name="komputer" package="BAB2.latihan1" visibility="public" isAbstract="true" xPosition="419.0" yPosition="265.0">
+      <Fields>
+        <Field name="spesifikasi" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setspesifikasi" returnType="void" visibility="package">
+          <Argument type="String" name="spesifikasi"/>
+        </Method>
+        <Method name="setprocessor" returnType="void" visibility="package">
+          <Argument type="String" name="processor"/>
+        </Method>
+        <Method name="setlistrik" returnType="void" visibility="package">
+          <Argument type="String" name="listrik"/>
+        </Method>
+        <Method name="getspesifikasi" returnType="String" visibility="package"/>
+        <Method name="getprocessor" returnType="String" visibility="package"/>
+        <Method name="getlistrik" returnType="String" visibility="package"/>
+        <Method name="getlihatSpec" returnType="String" visibility="package" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="laptop" package="BAB2.latihan1" visibility="public" xPosition="369.0" yPosition="20.0">
+      <Fields>
+        <Field name="spesifikasi" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="spesifikasi"/>
+          <Argument type="String" name="processor"/>
+          <Argument type="String" name="listrik"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getlihatSpec" returnType="String" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="Main" package="BAB2.latihan1" visibility="public" xPosition="123.0" yPosition="312.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="netbook" package="BAB2.latihan1" visibility="public" xPosition="359.0" yPosition="625.0">
+      <Fields>
+        <Field name="spesifikasi" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="spesifikasi"/>
+          <Argument type="String" name="processor"/>
+          <Argument type="String" name="listrik"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getlihatSpec" returnType="String" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="PC" package="BAB2.latihan1" visibility="public" xPosition="812.0" yPosition="321.0">
+      <Fields>
+        <Field name="spesifikasi" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="spesifikasi"/>
+          <Argument type="String" name="processor"/>
+          <Argument type="String" name="listrik"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getlihatSpec" returnType="String" visibility="package"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="BAB2.latihan1.laptop" target="BAB2.latihan1.komputer"/>
+    <IsRelation name="is" source="BAB2.latihan1.netbook" target="BAB2.latihan1.komputer"/>
+    <IsRelation name="is" source="BAB2.latihan1.PC" target="BAB2.latihan1.komputer"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

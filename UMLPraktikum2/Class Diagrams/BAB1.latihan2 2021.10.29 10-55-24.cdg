@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="BAB1.latihan2">
+  <ClassDiagramComponents>
+    <Class name="BangunDatar" package="BAB1.latihan2" visibility="public" isAbstract="true" xPosition="364.0" yPosition="287.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="LUASPP" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="KELILINGPP" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="LUASP" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="KELILINGP" returnType="void" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="main" package="BAB1.latihan2" visibility="public" xPosition="347.0" yPosition="506.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Persegi" package="BAB1.latihan2" visibility="public" xPosition="364.0" yPosition="23.0">
+      <Fields>
+        <Field name="s" type="int" visibility="package"/>
+        <Field name="Input" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="LUASPP" returnType="void" visibility="public"/>
+        <Method name="KELILINGPP" returnType="void" visibility="public"/>
+        <Method name="LUASP" returnType="void" visibility="public"/>
+        <Method name="KELILINGP" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PersegiPanjang" package="BAB1.latihan2" visibility="public" xPosition="597.0" yPosition="277.0">
+      <Fields>
+        <Field name="l" type="int" visibility="package"/>
+        <Field name="Input" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="LUASPP" returnType="void" visibility="public"/>
+        <Method name="KELILINGPP" returnType="void" visibility="public"/>
+        <Method name="LUASP" returnType="void" visibility="public"/>
+        <Method name="KELILINGP" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="BAB1.latihan2.PersegiPanjang" target="BAB1.latihan2.BangunDatar"/>
+    <IsRelation name="is" source="BAB1.latihan2.Persegi" target="BAB1.latihan2.BangunDatar"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

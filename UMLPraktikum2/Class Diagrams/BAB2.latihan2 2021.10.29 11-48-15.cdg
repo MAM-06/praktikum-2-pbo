@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="BAB2.latihan2">
+  <ClassDiagramComponents>
+    <Class name="car" package="BAB2.latihan2" visibility="public" isAbstract="true" xPosition="459.0" yPosition="294.0">
+      <Fields>
+        <Field name="license" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="detail" returnType="void" visibility="package" isAbstract="true"/>
+        <Method name="getLicense" returnType="String" visibility="public"/>
+        <Method name="setLicense" returnType="void" visibility="public">
+          <Argument type="String" name="license"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="garage" package="BAB2.latihan2" visibility="public" xPosition="213.0" yPosition="303.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="detail" returnType="void" visibility="package"/>
+        <Method name="workDesc" returnType="void" visibility="package"/>
+        <Method name="billingIn" returnType="void" visibility="package"/>
+        <Method name="owner" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="Main" package="BAB2.latihan2" visibility="public" xPosition="464.0" yPosition="527.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="owner" package="BAB2.latihan2" visibility="public" xPosition="481.0" yPosition="63.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="detail" returnType="void" visibility="package"/>
+        <Method name="carDesc" returnType="void" visibility="package"/>
+        <Method name="serviceHis" returnType="void" visibility="package"/>
+        <Method name="petrolMilHis" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="registration" package="BAB2.latihan2" visibility="public" xPosition="762.0" yPosition="303.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="detail" returnType="void" visibility="package"/>
+        <Method name="currentTown" returnType="void" visibility="package"/>
+        <Method name="venicleID" returnType="void" visibility="package"/>
+        <Method name="taxDue" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="BAB2.latihan2.garage" target="BAB2.latihan2.car"/>
+    <IsRelation name="is" source="BAB2.latihan2.registration" target="BAB2.latihan2.car"/>
+    <IsRelation name="is" source="BAB2.latihan2.owner" target="BAB2.latihan2.car"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

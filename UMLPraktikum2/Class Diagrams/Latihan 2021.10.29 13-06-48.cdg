@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Latihan">
+  <ClassDiagramComponents>
+    <Class name="Iphone" package="Latihan" visibility="public" xPosition="20.0" yPosition="64.0">
+      <Fields>
+        <Field name="volume" type="int" visibility="private"/>
+        <Field name="isPowerOn" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="powerOn" returnType="void" visibility="public"/>
+        <Method name="powerOff" returnType="void" visibility="public"/>
+        <Method name="volumeUp" returnType="void" visibility="public"/>
+        <Method name="volumeDown" returnType="void" visibility="public"/>
+        <Method name="getVolume" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Main" package="Latihan" visibility="public" xPosition="292.0" yPosition="-38.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Oppo" package="Latihan" visibility="public" xPosition="20.0" yPosition="399.0">
+      <Fields>
+        <Field name="volume" type="int" visibility="private"/>
+        <Field name="isPowerOn" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="powerOn" returnType="void" visibility="public"/>
+        <Method name="powerOff" returnType="void" visibility="public"/>
+        <Method name="volumeUp" returnType="void" visibility="public"/>
+        <Method name="volumeDown" returnType="void" visibility="public"/>
+        <Method name="getVolume" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PhoneUser" package="Latihan" visibility="public" xPosition="571.0" yPosition="83.0">
+      <Fields>
+        <Field name="phone" type="Phone" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Phone" name="phone"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="turnOnThePhone" returnType="void" visibility="package"/>
+        <Method name="turnOffThePhone" returnType="void" visibility="package"/>
+        <Method name="makePhoneLouder" returnType="void" visibility="package"/>
+        <Method name="makePhoneSilent" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="Samsung" package="Latihan" visibility="public" xPosition="592.0" yPosition="399.0">
+      <Fields>
+        <Field name="volume" type="int" visibility="private"/>
+        <Field name="isPowerOn" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="powerOn" returnType="void" visibility="public"/>
+        <Method name="powerOff" returnType="void" visibility="public"/>
+        <Method name="volumeUp" returnType="void" visibility="public"/>
+        <Method name="volumeDown" returnType="void" visibility="public"/>
+        <Method name="getVolume" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Xiaomi" package="Latihan" visibility="public" xPosition="309.0" yPosition="399.0">
+      <Fields>
+        <Field name="volume" type="int" visibility="private"/>
+        <Field name="isPowerOn" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="powerOn" returnType="void" visibility="public"/>
+        <Method name="powerOff" returnType="void" visibility="public"/>
+        <Method name="volumeUp" returnType="void" visibility="public"/>
+        <Method name="volumeDown" returnType="void" visibility="public"/>
+        <Method name="getVolume" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Phone" package="Latihan" visibility="public" xPosition="309.0" yPosition="107.0">
+      <Methods>
+        <Method name="powerOn" returnType="void" visibility="package"/>
+        <Method name="powerOff" returnType="void" visibility="package"/>
+        <Method name="volumeUp" returnType="void" visibility="package"/>
+        <Method name="volumeDown" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Latihan.Oppo" target="Latihan.Phone"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Latihan.Samsung" target="Latihan.Phone"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Latihan.Xiaomi" target="Latihan.Phone"/>
+    <HasRelation name="phone" source="Latihan.PhoneUser" target="Latihan.Phone" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Latihan.Iphone" target="Latihan.Phone"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
